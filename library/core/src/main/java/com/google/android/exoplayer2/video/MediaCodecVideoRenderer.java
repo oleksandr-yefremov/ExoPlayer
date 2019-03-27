@@ -593,6 +593,7 @@ public class MediaCodecVideoRenderer extends MediaCodecRenderer {
         hasCrop
             ? outputFormat.getInteger(KEY_CROP_BOTTOM) - outputFormat.getInteger(KEY_CROP_TOP) + 1
             : outputFormat.getInteger(MediaFormat.KEY_HEIGHT);
+    Log.d("debug", "onOutputFormatChanged : " + outputFormat);
     processOutputFormat(codec, width, height);
   }
 

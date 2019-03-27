@@ -138,6 +138,12 @@
         "uri": "https://storage.googleapis.com/wvmedia/clear/h264/tears/tears_uhd.mpd"
       },
       {
+        "name": "WV: Secure HD Livestream",
+        "uri": "<DASH Manifest URL>",
+        "drm_scheme": "widevine",
+        "drm_license_url": "<Widevine - License aquisition url>"
+      },
+      {
         "name": "WV: Secure SD & HD (cenc,MP4,H264)",
         "uri": "https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd",
         "drm_scheme": "widevine",

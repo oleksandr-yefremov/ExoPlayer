@@ -1413,7 +1413,7 @@ public abstract class MediaCodecRenderer extends BaseRenderer {
         outputIndex =
             codec.dequeueOutputBuffer(outputBufferInfo, getDequeueOutputBufferTimeoutUs());
       }
-
+      Log.d("debug", "outputIndex : " + outputIndex);
       if (outputIndex < 0) {
         if (outputIndex == MediaCodec.INFO_OUTPUT_FORMAT_CHANGED /* (-2) */) {
           processOutputFormat();
